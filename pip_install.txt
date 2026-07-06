@@ -1,0 +1,8 @@
+# pytorch с поддержкой cuda
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu132/
+
+## Проверка доступности ГПУ
+python -c "import torch; print('Доступен ли GPU?:', torch.cuda.is_available()); print('Имя карты:', torch.cuda.get_device_name(0) if torch.cuda.is_available else 'НЕТ')"
+
+# Итоговый инсталл
+pip install opencv-python transformers pillow easyocr numpy streamlit scikit-learn matplotlib seaborn albumentations ultralytics python-dotenv pandas openpyxl tabulate joblib
